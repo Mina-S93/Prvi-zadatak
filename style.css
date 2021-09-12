@@ -92,9 +92,6 @@ body{
 
 
 @media  screen and (max-width:600px) {
-    /* .container{
-        background-position: right 50vw bottom 30vh, left 40vw top 40vh;
-    } */
     .card{
         width: 80%;
         height: 70%;
