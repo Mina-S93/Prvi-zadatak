@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-image: url('images/bg-pattern-top.svg'), url('images/bg-pattern-bottom.svg');
+    background-color: hsl(185, 75%, 39%);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 35vh, left 50vw top 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-color: whitesmoke;
+    width: 25%;
+    height: 60%;
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.image{
+    flex-basis: 35%;
+    background-image: url('images/bg-pattern-card.svg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+} 
+.image img{
+    border-radius: 50%;
+    border: 5px solid whitesmoke;
+    transform: translateY(50%);
+}
+.info{
+    flex-basis: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20%;
+    line-height: 2;
+}
+.info p:first-of-type{
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+    color: hsl(229, 23%, 23%);
+    font-size: 18px;
+}
+.info p:first-of-type span{
+    font-weight: normal;
+    margin-left: 2%;
+    color: hsl(227, 10%, 46%);
+}
+.info p:last-of-type{
+    color: hsl(227, 10%, 46%);
+    font-size: 14px;
+}
+.details{
+    flex-basis: 25%;
+    border-top: 1px solid hsl(0, 0%, 73%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.details p{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.5;
+    font-weight: 700;
+}
+.details p span{
+    color: hsl(227, 10%, 46%);
+    font-size: 10px;
+    font-weight: 400;
+}
+
+
+@media  screen and (max-width:600px) {
+    /* .container{
+        background-position: right 50vw bottom 30vh, left 40vw top 40vh;
+    } */
+    .card{
+        width: 80%;
+        height: 70%;
+    }
+}
