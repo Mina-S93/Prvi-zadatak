@@ -7,13 +7,11 @@
 }
 
 body{
-    width: 100vw;
-    height: 100vh;
     font-family: 'Kumbh Sans', sans-serif;
 }
 .container{
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    min-height: 100vh;
     background-image: url('images/bg-pattern-top.svg'), url('images/bg-pattern-bottom.svg');
     background-color: hsl(185, 75%, 39%);
     background-repeat: no-repeat, no-repeat;
@@ -24,8 +22,8 @@ body{
 }
 .card{
     background-color: whitesmoke;
-    width: 25%;
-    height: 60%;
+    width: 20rem;
+    height: 23rem;
     border-radius: 3%;
     display: flex;
     flex-direction: column;
@@ -88,12 +86,4 @@ body{
     color: hsl(227, 10%, 46%);
     font-size: 10px;
     font-weight: 400;
-}
-
-
-@media  screen and (max-width:600px) {
-    .card{
-        width: 80%;
-        height: 70%;
-    }
 }
